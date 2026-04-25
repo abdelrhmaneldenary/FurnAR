@@ -25,5 +25,7 @@ This separation allows the network to focus entirely on color semantics without 
 ## 📊 Training Details
 * **Dataset:** COCO 2017 Dataset.
 * **Loss Function:** L1 Loss (Mean Absolute Error) to prevent the muddy, desaturated colors common with MSE.
+* <img width="1321" height="835" alt="training_test" src="https://github.com/user-attachments/assets/5c47a4e0-4556-4395-9de7-2eeed0d3ec8d" />
+
 * **Hardware:** Trained on Kaggle using an NVIDIA Tesla T4.
 * **Strategy:** The ViT backbone was initially frozen to train the custom DPT decoder, followed by unfreezing for fine-tuning, avoiding catastrophic forgetting of the pre-trained ImageNet weights.
