@@ -6,10 +6,11 @@
 
 ## 📌 Overview
 This project implements a **Dense Prediction Transformer (DPT)** from first principles to perform high-quality image colorization. By leveraging a Vision Transformer (ViT) backbone to capture long-range global context, the model effectively predicts the missing color channels of a black-and-white input image.
+<img width="1529" height="473" alt="Screenshot from 2026-04-26 00-59-34" src="https://github.com/user-attachments/assets/1a064885-347f-44fc-bb2b-329234f76983" />
 
 Live Demo: [https://huggingface.co/spaces/Abdlerhman/DPT-Image-Colorization]
 
-## 🏗️ Architecture
+##  Architecture
 The architecture is built completely from scratch using PyTorch and follows a hierarchical encoder-decoder structure:
 * **Encoder (ViT-Base):** Extracts rich, global feature representations from the grayscale input.
 * **Reassemble Blocks:** Projects the sequence of transformer tokens back into spatial feature maps at various resolutions.
